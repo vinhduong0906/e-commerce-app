@@ -1,0 +1,21 @@
+@import '../../animation';
+
+.plus-service {
+    animation: apearance 1s;
+    background: var(--header_background);
+    padding: 2.5rem 7rem;
+
+    &>div {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .caption {
+        font-size: smaller;
+        color: #c0c0c0
+    }
+}

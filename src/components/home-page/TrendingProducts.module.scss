@@ -1,0 +1,22 @@
+@import './Categories.module.scss';
+@import '../../animation';
+
+.trending-products {
+    animation: apearance 1s;
+    color: black;
+
+    .title {
+        margin-bottom: 1.5rem;
+
+        .text-rotate {
+            @include text-rotate;
+        }
+
+        .text {
+            @include title-size;
+            font-weight: 400;
+        }
+    }
+
+
+}

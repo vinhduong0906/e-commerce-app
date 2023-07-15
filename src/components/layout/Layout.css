@@ -1,0 +1,26 @@
+header,
+.container {
+    width: 80%;
+    box-sizing: border-box;
+
+}
+
+.row>* {
+    padding: 0;
+}
+
+header {
+    margin: 2rem auto
+}
+
+.footer-container {
+    box-sizing: border-box;
+    background: #111111;
+}
+
+.btn-live-chat {
+    float: right;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 101;
+}

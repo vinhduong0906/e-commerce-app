@@ -1,0 +1,38 @@
+@import '../../animation';
+
+.product {
+    animation-name: fade-in;
+    animation-duration: 1s;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover img {
+        -webkit-transform: scale(1.1);
+        -webkit-transition: 0.6s;
+        -moz-transition: 0.6s;
+        -o-transition: 0.6s;
+        transform: scale(1.1);
+    }
+
+    img {
+
+
+        width: 100%;
+    }
+
+    .image {
+        overflow: hidden;
+    }
+
+    .name {
+        margin-top: 1rem;
+        font-weight: 500;
+    }
+
+    .price {
+        margin-bottom: 1rem;
+        color: #999;
+    }
+}

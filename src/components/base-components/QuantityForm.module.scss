@@ -1,0 +1,12 @@
+.quantity-input {
+    width: 2rem;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.increment-btn,
+.descrement-btn {
+    background: transparent;
+}

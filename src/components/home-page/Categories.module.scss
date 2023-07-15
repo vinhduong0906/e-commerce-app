@@ -1,0 +1,64 @@
+@import '../../animation';
+
+@mixin text-rotate {
+    transform: rotateX(30deg);
+    font-size: 0.9rem;
+    background: -webkit-linear-gradient(#5d5d5d, #bfbfbf, #464646);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin title-size {
+    font-size: 1.3rem;
+}
+
+
+
+.categories {
+    animation: apearance 1s;
+    color: black;
+
+    &>* {
+        transition: 1s;
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 1.5rem;
+
+        .text-rotate {
+            @include text-rotate;
+        }
+
+        .text {
+            @include title-size;
+            font-weight: 400;
+        }
+    }
+
+    .categories-inner {
+        &>div {
+            margin-bottom: 1.5rem;
+
+            &>a {
+                width: 49%;
+                overflow: hidden;
+                border-radius: 6px;
+
+                &:hover img {
+
+                    -webkit-transform: scale(1.1);
+                    -webkit-transition: 0.6s;
+                    -moz-transition: 0.6s;
+                    -o-transition: 0.6s;
+                    transform: scale(1.1);
+                }
+
+                img {
+                    width: 100%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

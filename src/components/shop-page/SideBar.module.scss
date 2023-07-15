@@ -1,0 +1,29 @@
+.sidebar-title {
+    font-weight: 500;
+}
+
+.sidebar-inner-title {
+    padding: 0.5rem 1rem;
+    background: #f6f9f6;
+    font-weight: 500;
+
+    &:first-child {
+        background: #111;
+        color: #fff;
+
+    }
+}
+
+a {
+    color: var(--bs-secondary);
+    font-weight: 400;
+    padding: 0.5rem 1.5rem;
+
+    &:hover {
+        color: #e5c47b;
+    }
+
+    &.active {
+        color: #e5c47b
+    }
+}

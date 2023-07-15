@@ -1,0 +1,67 @@
+h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--bs-secondary)
+}
+
+.text-error {
+    color: red;
+}
+
+
+.form-group {
+    input {
+        border-radius: 0;
+        padding: 1.5rem;
+
+
+        &:focus,
+        &:active {
+            outline: none;
+            box-shadow: none;
+            border-color: lightgray;
+        }
+
+
+
+    }
+
+    button {
+        border-radius: 0;
+        width: 100%;
+        margin-top: 2rem;
+        padding: 1rem;
+
+        &:disabled,
+        &[disabled] {
+            cursor: not-allowed;
+            pointer-events: all !important;
+            background: #bdbdbd;
+        }
+
+    }
+}
+
+.click-sign-in {
+    font-size: 1.2rem;
+
+    a {
+        color: blue
+    }
+
+
+}
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}

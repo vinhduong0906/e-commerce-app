@@ -1,0 +1,79 @@
+tbody td {
+    font-size: 1.2rem;
+
+    &:nth-child(2) {
+        font-weight: 500;
+    }
+
+    &:first-child {
+        text-align: start;
+    }
+
+    text-align: center;
+
+    button {
+        background: transparent;
+    }
+
+    img {
+        width: 80px;
+    }
+}
+
+th,
+.cart-total label {
+    padding: 1rem 0 !important;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.product-list td,
+.product-list th,
+.product-list thead th {
+    border: none;
+}
+
+.product-list>thead {
+    background: var(--header_background);
+}
+
+.cart-total {
+    background: var(--header_background);
+
+    & input,
+    & button {
+        border-radius: 0;
+    }
+
+    .sub-total-price {
+        font-size: medium;
+    }
+
+    .total-price {
+        font-size: large;
+
+    }
+
+    .btn-apply-coupon {
+        background: var(--btn_background);
+    }
+
+}
+
+.bottom-menu {
+    background: var(--header_background);
+
+    a:hover {
+        border: 1px solid;
+    }
+
+    a {
+        color: black;
+
+        img {
+            width: 1.6rem;
+        }
+    }
+
+
+}
